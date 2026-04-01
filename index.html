@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+<title>Репетитор по истории и обществознанию</title>
+
+<style>
+body{
+    margin:0;
+    font-family:'Montserrat',sans-serif;
+    background:#eef5f7;
+    color:#1f2937;
+}
+
+.container{
+    max-width:1100px;
+    margin:auto;
+    padding:20px;
+}
+
+/* ШАПКА */
+.hero{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:70px;
+    border-radius:24px;
+    gap:30px;
+    background:linear-gradient(135deg,#cfe3ea,#eaf6fb,#d9edf4);
+}
+
+.hero-text{flex:1;}
+
+.hero h1{
+    font-size:40px;
+    line-height:1.1;
+}
+
+.hero-highlight{
+    font-size:20px;
+    font-weight:600;
+    margin:20px 0;
+}
+
+.hero-highlight span{color:#2563eb;}
+
+.books-middle{
+    width:150px;
+    opacity:0.9;
+    transform:rotate(-6deg);
+}
+
+.hero-right img{
+    width:260px;
+    border-radius:14px;
+}
+
+/* КНОПКИ */
+.buttons{
+    display:flex;
+    gap:10px;
+    margin-top:20px;
+}
+
+.btn{
+    padding:14px 20px;
+    color:white;
+    border-radius:10px;
+    text-decoration:none;
+    font-weight:600;
+}
+
+.btn.max{background:#2563eb;}
+.btn.whatsapp{background:#25D366;}
+.btn.telegram{background:#2AABEE;}
+
+/* БЛОКИ */
+.section{margin-top:60px;}
+.section h2{margin-bottom:15px;}
+
+.card,.review{
+    background:white;
+    padding:15px;
+    border-radius:10px;
+    margin-bottom:10px;
+}
+
+/* 📱 МОБИЛКА */
+@media(max-width:768px){
+
+.hero{
+    flex-direction:column;
+    text-align:center;
+    padding:30px 15px;
+}
+
+.hero-right{
+    order:-1;
+    margin-bottom:20px;
+}
+
+.hero-right img{width:200px;}
+
+.hero h1{font-size:28px;}
+
+.hero-highlight{font-size:16px;}
+
+.books-middle{
+    order:3;
+    width:110px;
+    margin:20px auto;
+    transform:none;
+}
+
+.buttons{
+    flex-direction:column;
+    align-items:center;
+    width:100%;
+}
+
+.btn{
+    width:100%;
+    max-width:280px;
+    text-align:center;
+}
+}
+</style>
+</head>
+
+<body>
+<div class="container">
+
+<!-- ШАПКА -->
+<div class="hero">
+
+<div class="hero-text">
+<h1>Евгения<br>Александровна</h1>
+
+<div class="hero-highlight">
+<span>История</span> — это не скучные даты, а захватывающие сюжеты.<br>
+<span>Обществознание</span> — не сухие законы, а правила жизни вокруг нас.
+</div>
+
+<p>
+Я помогу увидеть эту связь и полюбить предметы, которые кажутся сложными.
+</p>
+
+<div class="buttons">
+<a href="https://max.ru/" class="btn max">MAX</a>
+<a href="https://wa.me/79181262242" class="btn whatsapp">WhatsApp</a>
+<a href="https://t.me/79181262242" class="btn telegram">Telegram</a>
+</div>
+
+</div>
+
+<img src="books.png" class="books-middle">
+
+<div class="hero-right">
+<img src="photo.jpg">
+</div>
+
+</div>
+
+<!-- ПОЧЕМУ -->
+<div class="section">
+<h2>Почему со мной будет проще</h2>
+
+<div class="card">я объясняю так, чтобы запомнилось надолго, а не на один урок;</div>
+<div class="card">мы работаем с картами, схемами, инфографикой — никакой зубрёжки;</div>
+<div class="card">разбираем задания из ОГЭ и ЕГЭ, учимся писать развёрнутые ответы и аргументировать свою точку зрения;</div>
+<div class="card">вы получаете план подготовки и видите свой прогресс на каждом этапе.</div>
+
+</div>
+
+<!-- КОМУ -->
+<div class="section">
+<h2>Со мной занимаются</h2>
+
+<div class="card">ученики, которым нужна помощь с домашними заданиями;</div>
+<div class="card">выпускники, нацеленные на высокие баллы на экзаменах;</div>
+<div class="card">студенты, готовящиеся к сессии;</div>
+<div class="card">любознательные взрослые — для общего развития.</div>
+
+</div>
+
+<!-- КАК ПРОХОДЯТ -->
+<div class="section">
+<h2>Как проходят занятия</h2>
+
+<div class="card">индивидуально или в мини-группах (2–3 человека);</div>
+<div class="card">онлайн через Zoom / Яндекс Телемост / VK;</div>
+<div class="card">с гибким графиком — подстроимся под ваши возможности.</div>
+
+</div>
+
+<!-- ПРОЦЕСС -->
+<div class="section">
+<h2>Как мы работаем</h2>
+
+<div class="card">Запишитесь на диагностику: тестирование и беседа, чтобы определить уровень знаний и цели.</div>
+<div class="card">Обсудим ваши цели и составим план работы.</div>
+<div class="card">Составим персональную программу с учётом сроков и задач.</div>
+<div class="card">Приступим к практике: разберем теорию, будем решать задания разных типов, отработаем критерии оценивания.</div>
+<div class="card">Осуществляем контроль: регулярные пробники и анализ ошибок.</div>
+<div class="card">Поддержка: консультации перед экзаменами и ответы на вопросы между занятиями.</div>
+
+</div>
+
+<!-- УСЛОВИЯ -->
+<div class="section">
+<h2>Условия</h2>
+
+<div class="card">длительность занятия: 60 или 90 минут;</div>
+<div class="card">формат: онлайн;</div>
+<div class="card">стоимость: 1500 за урок;</div>
+<div class="card">стоимость в мини-группах от 2-3 человек 600р;</div>
+<div class="card">пробный урок: 500р;</div>
+
+</div>
+
+<!-- ОТЗЫВЫ — ВСЕ -->
+<div class="section">
+<h2>Отзывы</h2>
+
+<div class="review">Анна — 6 марта 2026: Работу выполняет на отлично. Хороший специалист.</div>
+
+<div class="review">Анастасия Юрьевна Ивагина — 2 февраля 2026: Евгения Александровна прекрасно разбирается в теме, легко нашла общий язык с моей дочерью. Продолжаем готовиться к сдаче ОГЭ.</div>
+
+<div class="review">Екатерина — 4 февраля 2026: Все понравилось. Просто, доступно, структурно, с индивидуальным подходом.</div>
+
+<div class="review">Айсел — 18 декабря 2025: Очень хороший специалист, готовлюсь к ЕГЭ и к ДВИ, понимаю что всё получится.</div>
+
+<div class="review">Юлия — 16 августа 2025: Подготовила сына к ОГЭ с нуля. Экзамен сдан.</div>
+
+<div class="review">Оксана — 11 июля 2025: За 9 дней подготовка к пересдаче ЕГЭ — отличный результат.</div>
+
+<div class="review">Светлана — 5 июня 2025: За короткий срок вывела на твёрдую четверку.</div>
+
+<div class="review">Аида — 16 июня 2025: Огромное спасибо за подготовку к ОГЭ.</div>
+
+<div class="review">Елизавета — 26 июля 2020: Набрала 96 баллов за ЕГЭ по истории.</div>
+
+<div class="review">Александра — 11 июня 2025: Сдал ОГЭ на отлично.</div>
+
+<div class="review">Ольга — 27 июня 2024: Очень грамотный педагог, отличный подход к подростку.</div>
+
+<div class="review">Тамара — 4 апреля 2024: Потрясающий педагог.</div>
+
+<div class="review">Лейла — 13 марта 2024: С 3 до 5 за короткое время.</div>
+
+<div class="review">Григорян Лилит — 7 марта 2024: Очень интересные занятия.</div>
+
+<div class="review">Мария Соловьёва — 14 ноября 2022: Всё стало понятно, занятия понравились.</div>
+
+</div>
+
+</div>
+</body>
+</html>
